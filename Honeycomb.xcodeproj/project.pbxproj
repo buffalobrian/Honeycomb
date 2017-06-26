@@ -15,6 +15,8 @@
 		48F3E1EE1EFD6DA300E8EFA0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48F3E1EC1EFD6DA300E8EFA0 /* LaunchScreen.storyboard */; };
 		48F3E1F91EFD6DA400E8EFA0 /* HoneycombTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F3E1F81EFD6DA400E8EFA0 /* HoneycombTests.swift */; };
 		48F3E2041EFD6DA400E8EFA0 /* HoneycombUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F3E2031EFD6DA400E8EFA0 /* HoneycombUITests.swift */; };
+		48F3E2141EFD7A9600E8EFA0 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F3E2131EFD7A9600E8EFA0 /* ThirdViewController.swift */; };
+		48F3E2161EFD868D00E8EFA0 /* InventoryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F3E2151EFD868D00E8EFA0 /* InventoryController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		48F3E1FF1EFD6DA400E8EFA0 /* HoneycombUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HoneycombUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		48F3E2031EFD6DA400E8EFA0 /* HoneycombUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoneycombUITests.swift; sourceTree = "<group>"; };
 		48F3E2051EFD6DA400E8EFA0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		48F3E2131EFD7A9600E8EFA0 /* ThirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
+		48F3E2151EFD868D00E8EFA0 /* InventoryController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InventoryController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,10 +106,12 @@
 				48F3E1E11EFD6DA300E8EFA0 /* AppDelegate.swift */,
 				48F3E1E31EFD6DA300E8EFA0 /* FirstViewController.swift */,
 				48F3E1E51EFD6DA300E8EFA0 /* SecondViewController.swift */,
+				48F3E2131EFD7A9600E8EFA0 /* ThirdViewController.swift */,
 				48F3E1E71EFD6DA300E8EFA0 /* Main.storyboard */,
 				48F3E1EA1EFD6DA300E8EFA0 /* Assets.xcassets */,
 				48F3E1EC1EFD6DA300E8EFA0 /* LaunchScreen.storyboard */,
 				48F3E1EF1EFD6DA300E8EFA0 /* Info.plist */,
+				48F3E2151EFD868D00E8EFA0 /* InventoryController.swift */,
 			);
 			path = Honeycomb;
 			sourceTree = "<group>";
@@ -263,7 +269,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				48F3E1E61EFD6DA300E8EFA0 /* SecondViewController.swift in Sources */,
+				48F3E2161EFD868D00E8EFA0 /* InventoryController.swift in Sources */,
 				48F3E1E21EFD6DA300E8EFA0 /* AppDelegate.swift in Sources */,
+				48F3E2141EFD7A9600E8EFA0 /* ThirdViewController.swift in Sources */,
 				48F3E1E41EFD6DA300E8EFA0 /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -419,6 +427,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Honeycomb/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = TIIC.Honeycomb;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -431,6 +440,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Honeycomb/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = TIIC.Honeycomb;
 				PRODUCT_NAME = "$(TARGET_NAME)";
