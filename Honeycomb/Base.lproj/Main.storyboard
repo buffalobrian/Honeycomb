@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
     <device id="ipad9_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -138,7 +138,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Check In" image="second" selectedImage="down_triangle" id="cPa-gy-q4n"/>
+                    <tabBarItem key="tabBarItem" title="Check In" image="down_triangle" selectedImage="down_triangle" id="cPa-gy-q4n"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
@@ -157,7 +157,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Inventory" selectedImage="inventory_triangle" id="cOB-Fk-wSR"/>
+                    <tabBarItem key="tabBarItem" title="Inventory" image="inventory_triangle" selectedImage="inventory_triangle" id="cOB-Fk-wSR"/>
                     <connections>
                         <outlet property="searchDisplayController" destination="StB-2m-9rI" id="38k-HV-Ryh"/>
                     </connections>
@@ -199,7 +199,6 @@
         <image name="Camera" width="170" height="170"/>
         <image name="down_triangle" width="30" height="30"/>
         <image name="inventory_triangle" width="30" height="30"/>
-        <image name="second" width="30" height="30"/>
         <image name="up_triangle" width="30" height="30"/>
     </resources>
 </document>
