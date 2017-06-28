@@ -138,7 +138,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Check In" image="second" id="cPa-gy-q4n"/>
+                    <tabBarItem key="tabBarItem" title="Check In" image="second" selectedImage="down_triangle" id="cPa-gy-q4n"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
@@ -157,7 +157,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Inventory" id="cOB-Fk-wSR"/>
+                    <tabBarItem key="tabBarItem" title="Inventory" selectedImage="inventory_triangle" id="cOB-Fk-wSR"/>
                     <connections>
                         <outlet property="searchDisplayController" destination="StB-2m-9rI" id="38k-HV-Ryh"/>
                     </connections>
@@ -187,7 +187,7 @@
                     <connections>
                         <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
                         <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
-                        <segue destination="Rwq-Ol-IIj" kind="relationship" relationship="viewControllers" id="Zvk-uT-cCJ"/>
+                        <segue destination="Rwq-Ol-IIj" kind="relationship" relationship="viewControllers" id="Wbu-kZ-ndf"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
@@ -197,6 +197,8 @@
     </scenes>
     <resources>
         <image name="Camera" width="170" height="170"/>
+        <image name="down_triangle" width="30" height="30"/>
+        <image name="inventory_triangle" width="30" height="30"/>
         <image name="second" width="30" height="30"/>
         <image name="up_triangle" width="30" height="30"/>
     </resources>
