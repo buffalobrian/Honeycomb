@@ -106,6 +106,15 @@
                                     <!--2017-06-23 19:13:27 +0000-->
                                 </date>
                             </datePicker>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TWA-qE-Xu6">
+                                <rect key="frame" x="699" y="865" width="49" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Submit"/>
+                                <connections>
+                                    <action selector="submitButton:" destination="9pv-A4-QxB" eventType="touchUpInside" id="YLa-ew-EAJ"/>
+                                    <action selector="temp:" destination="9pv-A4-QxB" eventType="touchUpInside" id="hbc-09-hK6"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -146,6 +155,16 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Check Out" image="up_triangle" id="acW-dT-cKf"/>
+                    <connections>
+                        <outlet property="cwidField" destination="kem-c1-aZP" id="EjE-af-aF8"/>
+                        <outlet property="dateField" destination="hyR-Db-G9N" id="8HO-nZ-u7c"/>
+                        <outlet property="dothing" destination="TWA-qE-Xu6" id="eyU-4Q-jjl"/>
+                        <outlet property="emailField" destination="bLB-Ec-A3l" id="ECf-7U-nc5"/>
+                        <outlet property="nameField" destination="iuW-VD-xhy" id="Bgg-U2-rIb"/>
+                        <outlet property="phoneField" destination="bFd-MQ-w1F" id="3KE-7b-xRM"/>
+                        <outlet property="requestField" destination="gDu-xa-ozs" id="VUN-ww-yFa"/>
+                        <outlet property="temp" destination="TWA-qE-Xu6" id="3XZ-wH-4hv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
