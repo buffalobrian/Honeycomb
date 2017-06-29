@@ -49,7 +49,7 @@ class FirstViewController: UIViewController {
             //Get Current Time and Add to DB
             let date = NSDate()
             let dateFormatter = DateFormatter()
-            dateFormatter.dateFormat = "dd-MM-yyyy hh:mm:ss"
+            dateFormatter.dateFormat = "MM-dd-yyyy hh:mm:ss"
             let dateString = dateFormatter.string(from: date as Date)
             self.ref.child("Check Out Forms/" + dateStrings).setValue(["name": nameString!, "email": emailString!, "phone": phoneNumber])
             
