@@ -18,7 +18,7 @@ class FirstViewController: UIViewController {
     @IBOutlet weak var requestField: UITextField!
     @IBOutlet weak var dateField: UIDatePicker!
 
-    var nameString: String?, emailString: String?, phoneNumber: Int?, CWID: Int?, requestString: String?
+    var nameString: String?, emailString: String?, phoneNumber: String?, CWID: Int?, requestString: String?
     
     var ref: DatabaseReference!
     
@@ -26,7 +26,7 @@ class FirstViewController: UIViewController {
         // Get all input field values
         nameString = nameField.text
         emailString = emailField.text
-        phoneNumber = Int(phoneField.text!)
+        phoneNumber = phoneField.text
         
         // Create connection w/ database & write to it
         ref = Database.database().reference()
@@ -51,7 +51,7 @@ class FirstViewController: UIViewController {
             let dateFormatter = DateFormatter()
             dateFormatter.dateFormat = "MM-dd-yyyy hh:mm:ss"
             let dateString = dateFormatter.string(from: date as Date)
-            self.ref.child("Check Out Forms/" + dateStrings).setValue(["name": nameString!, "email": emailString!, "phone": phoneNumber])
+            self.ref.child("Check Out Forms/" + dateStrings).setValue(["name": nameString!, "email": emailString!, "phone": phoneNumber!])
             
         }
         else{
