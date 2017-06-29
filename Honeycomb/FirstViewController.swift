@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class FirstViewController: UIViewController {
 
@@ -19,22 +20,50 @@ class FirstViewController: UIViewController {
 
     var nameString: String?, emailString: String?, phoneNumber: Int?, CWID: Int?, requestString: String?
     
+    var ref: DatabaseReference!
+    
     @IBAction func submitButton(_ sender: Any) {
+        // Get all input field values
         nameString = nameField.text
         emailString = emailField.text
-        //It takes the title and the alert message and prefferred style
-        let alertController = UIAlertController(title: "Thanks, " + nameString! + "!", message: "We'll contact you at " + emailString! + " reminding you when to return our equipment", preferredStyle: .alert)
+        phoneNumber = Int(phoneField.text!)
+        
+        // Create connection w/ database & write to it
+        ref = Database.database().reference()
         
         //then we create a default action for the alert...
         //It is actually a button and we have given the button text style and handler
         //currently handler is nil as we are not specifying any handler
         let defaultAction = UIAlertAction(title: "Adios", style: .default, handler: nil)
         
-        //now we are adding the default action to our alertcontroller
-        alertController.addAction(defaultAction)
+        //It takes the title and the alert message and prefferred style
+        if nameString != "" {
+            let alertController = UIAlertController(title: "Thanks, " + nameString! + "!", message: "We'll contact you at " + emailString! + " reminding you when to return our equipment", preferredStyle: .alert)
+            
+            //now we are adding the default action to our alertcontroller
+            alertController.addAction(defaultAction)
+            
+            //and finally presenting our alert using this method
+            present(alertController, animated: true, completion: nil)
+            
+            //Get Current Time and Add to DB
+            let date = NSDate()
+            let dateFormatter = DateFormatter()
+            dateFormatter.dateFormat = "dd-MM-yyyy hh:mm:ss"
+            let dateString = dateFormatter.string(from: date as Date)
+            self.ref.child("Check Out Forms/" + dateStrings).setValue(["name": nameString!, "email": emailString!, "phone": phoneNumber])
+            
+        }
+        else{
+            let alertController = UIAlertController(title: "Oops!", message: "It seems you did not every field!", preferredStyle: .alert)
+            
+            //now we are adding the default action to our alertcontroller
+            alertController.addAction(defaultAction)
+            
+            //and finally presenting our alert using this method
+            present(alertController, animated: true, completion: nil)
+        }
         
-        //and finally presenting our alert using this method
-        present(alertController, animated: true, completion: nil)
     }
     
     override func viewDidLoad() {

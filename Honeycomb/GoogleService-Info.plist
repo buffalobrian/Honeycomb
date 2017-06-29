@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>815896925099-i9qtbs4u76f9hl6kunlsac9l232lnmpb.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.815896925099-i9qtbs4u76f9hl6kunlsac9l232lnmpb</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDYHYpgXLOhQpy6uM-gLTx-8uTVOiu_-7k</string>
+	<key>GCM_SENDER_ID</key>
+	<string>815896925099</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.TIIC.Honeycomb</string>
+	<key>PROJECT_ID</key>
+	<string>honeycomb-c2c5f</string>
+	<key>STORAGE_BUCKET</key>
+	<string>honeycomb-c2c5f.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true/>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false/>
+	<key>IS_APPINVITE_ENABLED</key>
+	<false/>
+	<key>IS_GCM_ENABLED</key>
+	<true/>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true/>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:815896925099:ios:1123618c91fe5f50</string>
+	<key>DATABASE_URL</key>
+	<string>https://honeycomb-c2c5f.firebaseio.com</string>
+</dict>
+</plist>

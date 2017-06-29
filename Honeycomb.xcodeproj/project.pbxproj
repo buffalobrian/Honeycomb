@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		48F0A0F21F05855600133371 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 48F0A0F11F05855600133371 /* GoogleService-Info.plist */; };
 		48F3E1E21EFD6DA300E8EFA0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F3E1E11EFD6DA300E8EFA0 /* AppDelegate.swift */; };
 		48F3E1E41EFD6DA300E8EFA0 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F3E1E31EFD6DA300E8EFA0 /* FirstViewController.swift */; };
 		48F3E1E61EFD6DA300E8EFA0 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F3E1E51EFD6DA300E8EFA0 /* SecondViewController.swift */; };
@@ -17,6 +18,9 @@
 		48F3E2041EFD6DA400E8EFA0 /* HoneycombUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F3E2031EFD6DA400E8EFA0 /* HoneycombUITests.swift */; };
 		48F3E2141EFD7A9600E8EFA0 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F3E2131EFD7A9600E8EFA0 /* ThirdViewController.swift */; };
 		48F3E2161EFD868D00E8EFA0 /* InventoryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F3E2151EFD868D00E8EFA0 /* InventoryController.swift */; };
+		5DE7A37D5D6268361356D5A4 /* Pods_HoneycombUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F43BAF175015B22B8019F40F /* Pods_HoneycombUITests.framework */; };
+		6C8E70DB6D4402483C1EAE95 /* Pods_Honeycomb.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E406147E10BC4A0CC87711B7 /* Pods_Honeycomb.framework */; };
+		7A7DA88BF4486A5507CD61B4 /* Pods_HoneycombTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE0DA45C35BB3B33F9879012 /* Pods_HoneycombTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +41,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0D47E5721AA75501D003D6E2 /* Pods-Honeycomb.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Honeycomb.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Honeycomb/Pods-Honeycomb.debug.xcconfig"; sourceTree = "<group>"; };
+		2139B2BCA5085A09047A7A4E /* Pods-HoneycombUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HoneycombUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HoneycombUITests/Pods-HoneycombUITests.release.xcconfig"; sourceTree = "<group>"; };
+		48F0A0F11F05855600133371 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		48F3E1DE1EFD6DA300E8EFA0 /* Honeycomb.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Honeycomb.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		48F3E1E11EFD6DA300E8EFA0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		48F3E1E31EFD6DA300E8EFA0 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -53,6 +60,13 @@
 		48F3E2051EFD6DA400E8EFA0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		48F3E2131EFD7A9600E8EFA0 /* ThirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 		48F3E2151EFD868D00E8EFA0 /* InventoryController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InventoryController.swift; sourceTree = "<group>"; };
+		D312909F85F8FD4CE29425FE /* Pods-HoneycombUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HoneycombUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HoneycombUITests/Pods-HoneycombUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		D5C5B8B38D98B152929B88B9 /* Pods-Honeycomb.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Honeycomb.release.xcconfig"; path = "Pods/Target Support Files/Pods-Honeycomb/Pods-Honeycomb.release.xcconfig"; sourceTree = "<group>"; };
+		DE0DA45C35BB3B33F9879012 /* Pods_HoneycombTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HoneycombTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E406147E10BC4A0CC87711B7 /* Pods_Honeycomb.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Honeycomb.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E7B09D6F8CB98B8EA7BB8CC1 /* Pods-HoneycombTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HoneycombTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HoneycombTests/Pods-HoneycombTests.release.xcconfig"; sourceTree = "<group>"; };
+		EB2FF7096D50A84C381CEDD6 /* Pods-HoneycombTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HoneycombTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HoneycombTests/Pods-HoneycombTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F43BAF175015B22B8019F40F /* Pods_HoneycombUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HoneycombUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6C8E70DB6D4402483C1EAE95 /* Pods_Honeycomb.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A7DA88BF4486A5507CD61B4 /* Pods_HoneycombTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,12 +90,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5DE7A37D5D6268361356D5A4 /* Pods_HoneycombUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1F8E8654D99878259FA0F793 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0D47E5721AA75501D003D6E2 /* Pods-Honeycomb.debug.xcconfig */,
+				D5C5B8B38D98B152929B88B9 /* Pods-Honeycomb.release.xcconfig */,
+				EB2FF7096D50A84C381CEDD6 /* Pods-HoneycombTests.debug.xcconfig */,
+				E7B09D6F8CB98B8EA7BB8CC1 /* Pods-HoneycombTests.release.xcconfig */,
+				D312909F85F8FD4CE29425FE /* Pods-HoneycombUITests.debug.xcconfig */,
+				2139B2BCA5085A09047A7A4E /* Pods-HoneycombUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		48F3E1D51EFD6DA300E8EFA0 = {
 			isa = PBXGroup;
 			children = (
@@ -87,6 +117,8 @@
 				48F3E1F71EFD6DA400E8EFA0 /* HoneycombTests */,
 				48F3E2021EFD6DA400E8EFA0 /* HoneycombUITests */,
 				48F3E1DF1EFD6DA300E8EFA0 /* Products */,
+				1F8E8654D99878259FA0F793 /* Pods */,
+				BB2E10AD228B234125801430 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,6 +135,7 @@
 		48F3E1E01EFD6DA300E8EFA0 /* Honeycomb */ = {
 			isa = PBXGroup;
 			children = (
+				48F0A0F11F05855600133371 /* GoogleService-Info.plist */,
 				48F3E1E11EFD6DA300E8EFA0 /* AppDelegate.swift */,
 				48F3E1E31EFD6DA300E8EFA0 /* FirstViewController.swift */,
 				48F3E1E51EFD6DA300E8EFA0 /* SecondViewController.swift */,
@@ -134,6 +167,16 @@
 			path = HoneycombUITests;
 			sourceTree = "<group>";
 		};
+		BB2E10AD228B234125801430 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E406147E10BC4A0CC87711B7 /* Pods_Honeycomb.framework */,
+				DE0DA45C35BB3B33F9879012 /* Pods_HoneycombTests.framework */,
+				F43BAF175015B22B8019F40F /* Pods_HoneycombUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -141,9 +184,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 48F3E2081EFD6DA400E8EFA0 /* Build configuration list for PBXNativeTarget "Honeycomb" */;
 			buildPhases = (
+				26EF23DD7C910F6DA1154AED /* [CP] Check Pods Manifest.lock */,
 				48F3E1DA1EFD6DA300E8EFA0 /* Sources */,
 				48F3E1DB1EFD6DA300E8EFA0 /* Frameworks */,
 				48F3E1DC1EFD6DA300E8EFA0 /* Resources */,
+				B4CCD6A13711C6ECDD27A5E3 /* [CP] Embed Pods Frameworks */,
+				1ACC26B6025F84657BEF4F3F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -158,9 +204,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 48F3E20B1EFD6DA400E8EFA0 /* Build configuration list for PBXNativeTarget "HoneycombTests" */;
 			buildPhases = (
+				C6C74BDBECB3A7C560893BC4 /* [CP] Check Pods Manifest.lock */,
 				48F3E1F01EFD6DA400E8EFA0 /* Sources */,
 				48F3E1F11EFD6DA400E8EFA0 /* Frameworks */,
 				48F3E1F21EFD6DA400E8EFA0 /* Resources */,
+				B27B59C8F508F6D9300D0FDB /* [CP] Embed Pods Frameworks */,
+				22D27626A41944F18480CC26 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -176,9 +225,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 48F3E20E1EFD6DA400E8EFA0 /* Build configuration list for PBXNativeTarget "HoneycombUITests" */;
 			buildPhases = (
+				A0F4B6085144A4F086ADDA85 /* [CP] Check Pods Manifest.lock */,
 				48F3E1FB1EFD6DA400E8EFA0 /* Sources */,
 				48F3E1FC1EFD6DA400E8EFA0 /* Frameworks */,
 				48F3E1FD1EFD6DA400E8EFA0 /* Resources */,
+				136105C987FCD3284163CB8E /* [CP] Embed Pods Frameworks */,
+				967C44C6CC8CC15D1198FB2C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -242,6 +294,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				48F3E1EE1EFD6DA300E8EFA0 /* LaunchScreen.storyboard in Resources */,
+				48F0A0F21F05855600133371 /* GoogleService-Info.plist in Resources */,
 				48F3E1EB1EFD6DA300E8EFA0 /* Assets.xcassets in Resources */,
 				48F3E1E91EFD6DA300E8EFA0 /* Main.storyboard in Resources */,
 			);
@@ -262,6 +315,144 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		136105C987FCD3284163CB8E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HoneycombUITests/Pods-HoneycombUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1ACC26B6025F84657BEF4F3F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Honeycomb/Pods-Honeycomb-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		22D27626A41944F18480CC26 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HoneycombTests/Pods-HoneycombTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		26EF23DD7C910F6DA1154AED /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		967C44C6CC8CC15D1198FB2C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HoneycombUITests/Pods-HoneycombUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A0F4B6085144A4F086ADDA85 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B27B59C8F508F6D9300D0FDB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HoneycombTests/Pods-HoneycombTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B4CCD6A13711C6ECDD27A5E3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Honeycomb/Pods-Honeycomb-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C6C74BDBECB3A7C560893BC4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		48F3E1DA1EFD6DA300E8EFA0 /* Sources */ = {
@@ -424,12 +615,13 @@
 		};
 		48F3E2091EFD6DA400E8EFA0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0D47E5721AA75501D003D6E2 /* Pods-Honeycomb.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Honeycomb/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = TIIC.Honeycomb;
+				PRODUCT_BUNDLE_IDENTIFIER = com.TIIC.Honeycomb;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -437,12 +629,13 @@
 		};
 		48F3E20A1EFD6DA400E8EFA0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D5C5B8B38D98B152929B88B9 /* Pods-Honeycomb.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Honeycomb/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = TIIC.Honeycomb;
+				PRODUCT_BUNDLE_IDENTIFIER = com.TIIC.Honeycomb;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -450,6 +643,7 @@
 		};
 		48F3E20C1EFD6DA400E8EFA0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EB2FF7096D50A84C381CEDD6 /* Pods-HoneycombTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -464,6 +658,7 @@
 		};
 		48F3E20D1EFD6DA400E8EFA0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E7B09D6F8CB98B8EA7BB8CC1 /* Pods-HoneycombTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -478,6 +673,7 @@
 		};
 		48F3E20F1EFD6DA400E8EFA0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D312909F85F8FD4CE29425FE /* Pods-HoneycombUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = HoneycombUITests/Info.plist;
@@ -491,6 +687,7 @@
 		};
 		48F3E2101EFD6DA400E8EFA0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2139B2BCA5085A09047A7A4E /* Pods-HoneycombUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = HoneycombUITests/Info.plist;
@@ -521,6 +718,7 @@
 				48F3E20A1EFD6DA400E8EFA0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		48F3E20B1EFD6DA400E8EFA0 /* Build configuration list for PBXNativeTarget "HoneycombTests" */ = {
 			isa = XCConfigurationList;
@@ -529,6 +727,7 @@
 				48F3E20D1EFD6DA400E8EFA0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		48F3E20E1EFD6DA400E8EFA0 /* Build configuration list for PBXNativeTarget "HoneycombUITests" */ = {
 			isa = XCConfigurationList;
@@ -537,6 +736,7 @@
 				48F3E2101EFD6DA400E8EFA0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
