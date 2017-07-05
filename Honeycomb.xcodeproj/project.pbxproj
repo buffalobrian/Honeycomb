@@ -21,6 +21,7 @@
 		5DE7A37D5D6268361356D5A4 /* Pods_HoneycombUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F43BAF175015B22B8019F40F /* Pods_HoneycombUITests.framework */; };
 		6C8E70DB6D4402483C1EAE95 /* Pods_Honeycomb.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E406147E10BC4A0CC87711B7 /* Pods_Honeycomb.framework */; };
 		7A7DA88BF4486A5507CD61B4 /* Pods_HoneycombTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE0DA45C35BB3B33F9879012 /* Pods_HoneycombTests.framework */; };
+		ED2884BE1F0D722600A48542 /* CameraController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2884BD1F0D722600A48542 /* CameraController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +67,7 @@
 		E406147E10BC4A0CC87711B7 /* Pods_Honeycomb.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Honeycomb.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7B09D6F8CB98B8EA7BB8CC1 /* Pods-HoneycombTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HoneycombTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HoneycombTests/Pods-HoneycombTests.release.xcconfig"; sourceTree = "<group>"; };
 		EB2FF7096D50A84C381CEDD6 /* Pods-HoneycombTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HoneycombTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HoneycombTests/Pods-HoneycombTests.debug.xcconfig"; sourceTree = "<group>"; };
+		ED2884BD1F0D722600A48542 /* CameraController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraController.swift; sourceTree = "<group>"; };
 		F43BAF175015B22B8019F40F /* Pods_HoneycombUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HoneycombUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -141,6 +143,7 @@
 				48F3E1E51EFD6DA300E8EFA0 /* SecondViewController.swift */,
 				48F3E2131EFD7A9600E8EFA0 /* ThirdViewController.swift */,
 				48F3E1E71EFD6DA300E8EFA0 /* Main.storyboard */,
+				ED2884BD1F0D722600A48542 /* CameraController.swift */,
 				48F3E1EA1EFD6DA300E8EFA0 /* Assets.xcassets */,
 				48F3E1EC1EFD6DA300E8EFA0 /* LaunchScreen.storyboard */,
 				48F3E1EF1EFD6DA300E8EFA0 /* Info.plist */,
@@ -254,6 +257,7 @@
 				TargetAttributes = {
 					48F3E1DD1EFD6DA300E8EFA0 = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = XZW7NXKPCW;
 						ProvisioningStyle = Automatic;
 					};
 					48F3E1F31EFD6DA400E8EFA0 = {
@@ -459,6 +463,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED2884BE1F0D722600A48542 /* CameraController.swift in Sources */,
 				48F3E1E61EFD6DA300E8EFA0 /* SecondViewController.swift in Sources */,
 				48F3E2161EFD868D00E8EFA0 /* InventoryController.swift in Sources */,
 				48F3E1E21EFD6DA300E8EFA0 /* AppDelegate.swift in Sources */,
@@ -618,6 +623,7 @@
 			baseConfigurationReference = 0D47E5721AA75501D003D6E2 /* Pods-Honeycomb.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = XZW7NXKPCW;
 				INFOPLIST_FILE = Honeycomb/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -632,6 +638,7 @@
 			baseConfigurationReference = D5C5B8B38D98B152929B88B9 /* Pods-Honeycomb.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = XZW7NXKPCW;
 				INFOPLIST_FILE = Honeycomb/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
