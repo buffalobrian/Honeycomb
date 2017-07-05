@@ -22,6 +22,7 @@ class FirstViewController: UIViewController {
     
     var ref: DatabaseReference!
     
+    
     @IBAction func submitButton(_ sender: Any) {
         // Get all input field values
         nameString = nameField.text
