@@ -10,24 +10,6 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--First View Controller-->
-        <scene sceneID="0nR-0u-unr">
-            <objects>
-                <viewController id="Frg-Js-OUZ" customClass="FirstViewController" customModule="Honeycomb" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="rhi-MR-3aJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wKb-WP-9BI"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="MeA-SZ-6Pj">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="lo7-7J-Hzj" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1539.84375" y="-1118.5546875"/>
-        </scene>
         <!--Check Out-->
         <scene sceneID="hNz-n2-bh7">
             <objects>
@@ -199,7 +181,6 @@
                         <outlet property="nameField" destination="iuW-VD-xhy" id="Bgg-U2-rIb"/>
                         <outlet property="phoneField" destination="bFd-MQ-w1F" id="3KE-7b-xRM"/>
                         <outlet property="requestField" destination="gDu-xa-ozs" id="VUN-ww-yFa"/>
-                        <segue destination="Frg-Js-OUZ" kind="presentation" identifier="camera" id="9ew-Ph-VSd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
