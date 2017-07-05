@@ -6,7 +6,7 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Honeycomb/FirstViewController.swift"
@@ -19,14 +19,14 @@
             landmarkType = "3">
             <Locations>
                <Location
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "Honeycomb.FirstViewController.__deallocating_deinit"
                   moduleName = "Honeycomb"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/nminer/Documents/GitHub/Honeycomb/Honeycomb/FirstViewController.swift"
-                  timestampString = "520962694.5855"
+                  timestampString = "520964153.516233"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "0"
@@ -34,14 +34,14 @@
                   offsetFromSymbolStart = "4">
                </Location>
                <Location
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "Honeycomb.FirstViewController.init (nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; Honeycomb.FirstViewController"
                   moduleName = "Honeycomb"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/nminer/Documents/GitHub/Honeycomb/Honeycomb/FirstViewController.swift"
-                  timestampString = "520962694.587947"
+                  timestampString = "520964153.518494"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "14"
@@ -49,14 +49,14 @@
                   offsetFromSymbolStart = "70">
                </Location>
                <Location
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "Honeycomb.FirstViewController.__allocating_init (nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; Honeycomb.FirstViewController"
                   moduleName = "Honeycomb"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/nminer/Documents/GitHub/Honeycomb/Honeycomb/FirstViewController.swift"
-                  timestampString = "520962694.59075"
+                  timestampString = "520964153.521017"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "0"
@@ -64,14 +64,14 @@
                   offsetFromSymbolStart = "23">
                </Location>
                <Location
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "Honeycomb.FirstViewController.__allocating_init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;Honeycomb.FirstViewController&gt;"
                   moduleName = "Honeycomb"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/nminer/Documents/GitHub/Honeycomb/Honeycomb/FirstViewController.swift"
-                  timestampString = "520962694.593497"
+                  timestampString = "520964153.523233"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "0"
@@ -79,14 +79,14 @@
                   offsetFromSymbolStart = "4">
                </Location>
                <Location
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "Honeycomb.FirstViewController.init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;Honeycomb.FirstViewController&gt;"
                   moduleName = "Honeycomb"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/nminer/Documents/GitHub/Honeycomb/Honeycomb/FirstViewController.swift"
-                  timestampString = "520962694.596243"
+                  timestampString = "520964153.525556"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "14"

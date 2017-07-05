@@ -63,6 +63,7 @@ class FirstViewController: UIViewController {
             
             present(refreshAlert, animated: true, completion: nil)
             
+            
         }
         else{
             let defaultAction = UIAlertAction(title: "Close", style: .default, handler: nil)
@@ -75,28 +76,18 @@ class FirstViewController: UIViewController {
             //and finally presenting our alert using this method
             present(alertController, animated: true, completion: nil)
             
-            sleep(4)
         }
         
-    }
-    
-    func agreements() {
-        /*let defaultAction = UIAlertAction(title: "Agree", style: .default, handler: nil)
-        
-        let alertController = UIAlertController(title: "", message: "You agree to these terms?", preferredStyle: .alert)
-        
-        //now we are adding the default action to our alertcontroller
-        alertController.addAction(defaultAction)
-        
-        //and finally presenting our alert using this method
-        present(alertController, animated: true, completion: nil)*/
-
-
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        nameField.autocorrectionType = .no
+        emailField.autocorrectionType = .no
+        phoneField.autocorrectionType = .no
+        cwidField.autocorrectionType = .no
+        requestField.autocorrectionType = .no
     }
 
     override func didReceiveMemoryWarning() {
