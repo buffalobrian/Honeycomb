@@ -18,7 +18,7 @@ class FirstViewController: UIViewController {
     @IBOutlet weak var requestField: UITextField!
     @IBOutlet weak var dateField: UIDatePicker!
 
-    var nameString: String?, emailString: String?, phoneNumber: String?, CWID: Int?, requestString: String?
+    var nameString: String?, emailString: String?, phoneNumber: String?, CWID: String?, requestString: String?, dateObject: Date?
     
     var ref: DatabaseReference!
     
@@ -27,43 +27,71 @@ class FirstViewController: UIViewController {
         nameString = nameField.text
         emailString = emailField.text
         phoneNumber = phoneField.text
+        CWID = cwidField.text
+        requestString = requestField.text
+        dateObject = dateField.date
         
         // Create connection w/ database & write to it
         ref = Database.database().reference()
         
-        //then we create a default action for the alert...
-        //It is actually a button and we have given the button text style and handler
-        //currently handler is nil as we are not specifying any handler
-        let defaultAction = UIAlertAction(title: "Adios", style: .default, handler: nil)
-        
-        //It takes the title and the alert message and prefferred style
-        if nameString != "" {
-            let alertController = UIAlertController(title: "Thanks, " + nameString! + "!", message: "We'll contact you at " + emailString! + " reminding you when to return our equipment", preferredStyle: .alert)
+        if nameString != "" && emailString != "" && phoneNumber != "" && CWID != "" && requestString != "" && dateObject != nil{
+            let refreshAlert = UIAlertController(title: "Before You Submit", message: "You agree to the things yes?", preferredStyle: UIAlertControllerStyle.alert)
             
-            //now we are adding the default action to our alertcontroller
-            alertController.addAction(defaultAction)
+            refreshAlert.addAction(UIAlertAction(title: "Agree", style: .default, handler: { (action: UIAlertAction!) in
+                let refaultAction = UIAlertAction(title: "Close", style: .default, handler: nil)
+                
+                let blertController = UIAlertController(title: "Thanks, " + self.nameString! + "!", message: "We'll contact you at " + self.emailString! + " reminding you when to return our equipment", preferredStyle: .alert)
+                
+                //now we are adding the default action to our alertcontroller
+                blertController.addAction(refaultAction)
+                
+                //and finally presenting our alert using this method
+                self.present(blertController, animated: true, completion: nil)
+                
+                //Get Current Time and Add to DB
+                let date = NSDate()
+                let dateFormatter = DateFormatter()
+                dateFormatter.dateFormat = "MM-dd-yyyy hh:mm:ss"
+                let dateString = dateFormatter.string(from: date as Date)
+                let returnDate = dateFormatter.string(from: self.dateObject! )
+                self.ref.child("Check Out Forms/" + dateString).setValue(["name": self.nameString!, "email": self.emailString!, "phone": self.phoneNumber!, "CWID": self.CWID!, "RfR": self.requestString!, "Return By": returnDate])
+            }))
             
-            //and finally presenting our alert using this method
-            present(alertController, animated: true, completion: nil)
+            refreshAlert.addAction(UIAlertAction(title: "Disagree", style: .cancel, handler: { (action: UIAlertAction!) in
+                
+            }))
             
-            //Get Current Time and Add to DB
-            let date = NSDate()
-            let dateFormatter = DateFormatter()
-            dateFormatter.dateFormat = "MM-dd-yyyy hh:mm:ss"
-            let dateString = dateFormatter.string(from: date as Date)
-            self.ref.child("Check Out Forms/" + dateStrings).setValue(["name": nameString!, "email": emailString!, "phone": phoneNumber!])
+            present(refreshAlert, animated: true, completion: nil)
             
         }
         else{
-            let alertController = UIAlertController(title: "Oops!", message: "It seems you did not every field!", preferredStyle: .alert)
+            let defaultAction = UIAlertAction(title: "Close", style: .default, handler: nil)
+            
+            let alertController = UIAlertController(title: "Oops!", message: "It seems you did not fill in every field!", preferredStyle: .alert)
             
             //now we are adding the default action to our alertcontroller
             alertController.addAction(defaultAction)
             
             //and finally presenting our alert using this method
             present(alertController, animated: true, completion: nil)
+            
+            sleep(4)
         }
         
+    }
+    
+    func agreements() {
+        /*let defaultAction = UIAlertAction(title: "Agree", style: .default, handler: nil)
+        
+        let alertController = UIAlertController(title: "", message: "You agree to these terms?", preferredStyle: .alert)
+        
+        //now we are adding the default action to our alertcontroller
+        alertController.addAction(defaultAction)
+        
+        //and finally presenting our alert using this method
+        present(alertController, animated: true, completion: nil)*/
+
+
     }
     
     override func viewDidLoad() {
