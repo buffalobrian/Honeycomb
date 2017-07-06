@@ -132,8 +132,9 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <items>
-                                    <tabBarItem systemItem="favorites" id="LI0-yS-log"/>
-                                    <tabBarItem systemItem="more" id="MQQ-I4-6xl"/>
+                                    <tabBarItem title="Video" image="eye-2-24" id="LI0-yS-log"/>
+                                    <tabBarItem title="Audio" image="volume-24" id="MQQ-I4-6xl"/>
+                                    <tabBarItem title="Misc" image="dots-48" id="kFN-sW-mJZ"/>
                                 </items>
                             </tabBar>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="N1q-xS-d6T">
@@ -379,8 +380,11 @@
     </scenes>
     <resources>
         <image name="Camera" width="170" height="170"/>
+        <image name="dots-48" width="48" height="48"/>
         <image name="down_triangle" width="30" height="30"/>
+        <image name="eye-2-24" width="24" height="24"/>
         <image name="inventory_triangle" width="30" height="30"/>
         <image name="up_triangle" width="30" height="30"/>
+        <image name="volume-24" width="24" height="24"/>
     </resources>
 </document>
