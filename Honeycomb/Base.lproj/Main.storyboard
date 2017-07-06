@@ -10,24 +10,6 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--First View Controller-->
-        <scene sceneID="0nR-0u-unr">
-            <objects>
-                <viewController id="Frg-Js-OUZ" customClass="FirstViewController" customModule="Honeycomb" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="rhi-MR-3aJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wKb-WP-9BI"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="MeA-SZ-6Pj">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="lo7-7J-Hzj" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1539.84375" y="-1118.5546875"/>
-        </scene>
         <!--Check Out-->
         <scene sceneID="hNz-n2-bh7">
             <objects>
@@ -145,6 +127,21 @@
                                     <action selector="camera_onClick:" destination="9pv-A4-QxB" eventType="touchUpInside" id="OrK-yz-4jX"/>
                                 </connections>
                             </button>
+                            <tabBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Gk8-vf-vWY">
+                                <rect key="frame" x="50" y="433" width="668" height="49"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <items>
+                                    <tabBarItem title="Video" image="eye-2-24" id="LI0-yS-log"/>
+                                    <tabBarItem title="Audio" image="volume-24" id="MQQ-I4-6xl"/>
+                                    <tabBarItem title="Misc" image="dots-48" id="kFN-sW-mJZ"/>
+                                </items>
+                            </tabBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="N1q-xS-d6T">
+                                <rect key="frame" x="50" y="482" width="668" height="395"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -199,7 +196,6 @@
                         <outlet property="nameField" destination="iuW-VD-xhy" id="Bgg-U2-rIb"/>
                         <outlet property="phoneField" destination="bFd-MQ-w1F" id="3KE-7b-xRM"/>
                         <outlet property="requestField" destination="gDu-xa-ozs" id="VUN-ww-yFa"/>
-                        <segue destination="Frg-Js-OUZ" kind="presentation" identifier="camera" id="9ew-Ph-VSd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
@@ -384,8 +380,11 @@
     </scenes>
     <resources>
         <image name="Camera" width="170" height="170"/>
+        <image name="dots-48" width="48" height="48"/>
         <image name="down_triangle" width="30" height="30"/>
+        <image name="eye-2-24" width="24" height="24"/>
         <image name="inventory_triangle" width="30" height="30"/>
         <image name="up_triangle" width="30" height="30"/>
+        <image name="volume-24" width="24" height="24"/>
     </resources>
 </document>
