@@ -10,8 +10,7 @@ import UIKit
 import Firebase
 import MobileCoreServices
 
-class FirstViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
-
+class FirstViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate , UITableViewDelegate, UITableViewDataSource{
     @IBOutlet weak var nameField: UITextField!
     @IBOutlet weak var emailField: UITextField!
     @IBOutlet weak var phoneField: UITextField!
@@ -21,10 +20,17 @@ class FirstViewController: UIViewController, UIImagePickerControllerDelegate, UI
 
     @IBOutlet weak var cameraImage: UIImageView!
     
+    @IBOutlet weak var myTableView: UITableView!
+
     var nameString: String?, emailString: String?, phoneNumber: String?, CWID: String?, requestString: String?, dateObject: Date?,
-        newMedia: Bool?
+        newMedia: Bool?,
+        equipmentLabels: [String] = [],
+        availability: Bool?
     
+    let testArray = ["one", "two", "three"]
+
     var ref: DatabaseReference!
+    var refHandle: UInt!
     
     ///////////////////BEGIN CAMERA FUNCTIONS
     @IBAction func camera_onClick(_ sender: UIButton) {
@@ -86,6 +92,8 @@ class FirstViewController: UIViewController, UIImagePickerControllerDelegate, UI
     }
     ////////////////////////END OF CAMERA FUNCTIONS
     
+    
+    ////////////////////////HANDLE SUBMIT BUTTON
     @IBAction func submitButton(_ sender: Any) {
         // Get all input field values
         nameString = nameField.text
@@ -141,8 +149,8 @@ class FirstViewController: UIViewController, UIImagePickerControllerDelegate, UI
             present(alertController, animated: true, completion: nil)
             
         }
-        
     }
+    ////////////////////////END OF SUBMIT BUTTON
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -152,6 +160,24 @@ class FirstViewController: UIViewController, UIImagePickerControllerDelegate, UI
         phoneField.autocorrectionType = .no
         cwidField.autocorrectionType = .no
         requestField.autocorrectionType = .no
+        
+        ref = Database.database().reference()
+        refHandle = ref.child("EQUIPMENT").observe(DataEventType.value, with: { (snapshot) in
+            let dataDict = snapshot.value as! [String: AnyObject]
+            for x in dataDict {
+                self.ref.child("EQUIPMENT").child(x.key).observeSingleEvent(of: .value, with: { (snapshot) in
+                    let value = snapshot.value as? NSDictionary
+                    let available = value?["available"] as? Bool
+                    self.availability = available!
+                    if available! {
+                        self.equipmentLabels.append(x.key)
+                        print("Added an item to the inventory list: " + self.equipmentLabels.last!)
+                        print(self.equipmentLabels)
+                    }
+                })
+            }
+        })
+
     }
 
     override func didReceiveMemoryWarning() {
@@ -159,6 +185,22 @@ class FirstViewController: UIViewController, UIImagePickerControllerDelegate, UI
         // Dispose of any resources that can be recreated.
     }
 
+    public func tableView(_ myTableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        
+        print(equipmentLabels.count)
+        
+        return equipmentLabels.count
+        //return testArray.count
+    }
+    
+    public func tableView(_ myTableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = myTableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! FirstViewControllerTableViewCell
+        
+        cell.myLabel.text = equipmentLabels[indexPath.row]
+        print("changed text of cell")
+        
+        return cell
+    }
 
 }
 
