@@ -176,8 +176,8 @@ class FirstViewController: UIViewController, UIImagePickerControllerDelegate, UI
                     }
                 })
             }
+            
         })
-
     }
 
     override func didReceiveMemoryWarning() {
@@ -189,14 +189,14 @@ class FirstViewController: UIViewController, UIImagePickerControllerDelegate, UI
         
         print(equipmentLabels.count)
         
-        return equipmentLabels.count
-        //return testArray.count
+        //return equipmentLabels.count
+        return testArray.count
     }
     
     public func tableView(_ myTableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = myTableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! FirstViewControllerTableViewCell
         
-        cell.myLabel.text = equipmentLabels[indexPath.row]
+        cell.myLabel.text = testArray[indexPath.row]
         print("changed text of cell")
         
         return cell
