@@ -10,7 +10,7 @@ import UIKit
 import Firebase
 import MobileCoreServices
 
-class FirstViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate , UITableViewDelegate, UITableViewDataSource{
+class FirstViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate , UITableViewDelegate, UITableViewDataSource, UISearchBarDelegate{
     @IBOutlet weak var nameField: UITextField!
     @IBOutlet weak var emailField: UITextField!
     @IBOutlet weak var phoneField: UITextField!
@@ -18,6 +18,7 @@ class FirstViewController: UIViewController, UIImagePickerControllerDelegate, UI
     @IBOutlet weak var requestField: UITextField!
     @IBOutlet weak var dateField: UIDatePicker!
 
+    @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var cameraImage: UIImageView!
     
     @IBOutlet weak var myTableView: UITableView!
@@ -26,11 +27,12 @@ class FirstViewController: UIViewController, UIImagePickerControllerDelegate, UI
         newMedia: Bool?,
         equipmentLabels: [String] = [],
         availability: Bool?
-    
-    let testArray = ["one", "two", "three"]
 
     var ref: DatabaseReference!
     var refHandle: UInt!
+    
+    var searchActive : Bool = false
+    var filtered:[String] = []
     
     ///////////////////BEGIN CAMERA FUNCTIONS
     @IBAction func camera_onClick(_ sender: UIButton) {
@@ -152,6 +154,39 @@ class FirstViewController: UIViewController, UIImagePickerControllerDelegate, UI
     }
     ////////////////////////END OF SUBMIT BUTTON
     
+    ////////////////////////SEARCH BAR
+    func searchBarTextDidBeginEditing(_ searchBar: UISearchBar) {
+        searchActive = true;
+    }
+    
+    func searchBarTextDidEndEditing(_ searchBar: UISearchBar) {
+        searchActive = false;
+    }
+    
+    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
+        searchActive = false;
+    }
+    
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        searchActive = false;
+    }
+    
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        
+        filtered = equipmentLabels.filter({ (text) -> Bool in
+            let tmp: NSString = text as NSString
+            let range = tmp.range(of: searchText, options: NSString.CompareOptions.caseInsensitive)
+            return range.location != NSNotFound
+        })
+        if(filtered.count == 0){
+            searchActive = false;
+        } else {
+            searchActive = true;
+        }
+        self.myTableView.reloadData()
+    }
+    ////////////////////////END OF SEARCH BAR
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -161,22 +196,33 @@ class FirstViewController: UIViewController, UIImagePickerControllerDelegate, UI
         cwidField.autocorrectionType = .no
         requestField.autocorrectionType = .no
         
+        searchBar.delegate = self
+        
+        //populate equipment array
         ref = Database.database().reference()
         refHandle = ref.child("EQUIPMENT").observe(DataEventType.value, with: { (snapshot) in
             let dataDict = snapshot.value as! [String: AnyObject]
+            let group = DispatchGroup()
             for x in dataDict {
+                group.enter()
                 self.ref.child("EQUIPMENT").child(x.key).observeSingleEvent(of: .value, with: { (snapshot) in
                     let value = snapshot.value as? NSDictionary
                     let available = value?["available"] as? Bool
                     self.availability = available!
                     if available! {
                         self.equipmentLabels.append(x.key)
-                        print("Added an item to the inventory list: " + self.equipmentLabels.last!)
-                        print(self.equipmentLabels)
+                        //print("Added an item to the inventory list: " + self.equipmentLabels.last!)
+                        //print(self.equipmentLabels)
                     }
+                    group.leave()
                 })
             }
             
+            //Reload tableView when the equipment array is finished
+            group.notify(queue: .main) {
+                print("All callbacks are completed")
+                self.myTableView.reloadData()
+            }
         })
     }
 
@@ -186,18 +232,20 @@ class FirstViewController: UIViewController, UIImagePickerControllerDelegate, UI
     }
 
     public func tableView(_ myTableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        
-        print(equipmentLabels.count)
-        
-        //return equipmentLabels.count
-        return testArray.count
+        if(searchActive) {
+            return filtered.count
+        }
+        return equipmentLabels.count
     }
     
     public func tableView(_ myTableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = myTableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! FirstViewControllerTableViewCell
         
-        cell.myLabel.text = testArray[indexPath.row]
-        print("changed text of cell")
+        if(searchActive){
+            cell.myLabel.text = filtered[indexPath.row]
+        } else {
+            cell.myLabel.text = equipmentLabels[indexPath.row]
+        }
         
         return cell
     }

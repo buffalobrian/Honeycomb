@@ -10,7 +10,8 @@ import UIKit
 
 class FirstViewControllerTableViewCell: UITableViewCell {
     @IBOutlet weak var myLabel: UILabel!
-
+    @IBOutlet weak var mySwitch: UISwitch!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

@@ -144,15 +144,22 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="og3-S1-v9e">
+                                                    <rect key="frame" x="603" y="7" width="51" height="31"/>
+                                                </switch>
                                             </subviews>
                                             <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="og3-S1-v9e" secondAttribute="trailing" constant="16" id="2IE-52-5Od"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="Cip-0X-lVR" secondAttribute="bottom" constant="3" id="5W9-ui-bMU"/>
                                                 <constraint firstItem="Cip-0X-lVR" firstAttribute="top" secondItem="O7p-XH-X8g" secondAttribute="topMargin" constant="4" id="8hU-b7-USW"/>
                                                 <constraint firstItem="Cip-0X-lVR" firstAttribute="leading" secondItem="O7p-XH-X8g" secondAttribute="leadingMargin" id="kVy-E5-Q1E"/>
+                                                <constraint firstItem="og3-S1-v9e" firstAttribute="top" secondItem="O7p-XH-X8g" secondAttribute="top" constant="7" id="o4k-ln-iN2"/>
+                                                <constraint firstAttribute="bottom" secondItem="og3-S1-v9e" secondAttribute="bottom" constant="6" id="rUu-yN-QmT"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="myLabel" destination="Cip-0X-lVR" id="owW-uf-962"/>
+                                            <outlet property="mySwitch" destination="og3-S1-v9e" id="OwH-HD-IxW"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -161,6 +168,11 @@
                                     <outlet property="delegate" destination="9pv-A4-QxB" id="TkM-l7-cQr"/>
                                 </connections>
                             </tableView>
+                            <searchBar contentMode="redraw" fixedFrame="YES" placeholder="Filter" translatesAutoresizingMaskIntoConstraints="NO" id="T0Y-YN-o4Y">
+                                <rect key="frame" x="146" y="400" width="602" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -220,6 +232,7 @@
                         <outlet property="nameField" destination="iuW-VD-xhy" id="Bgg-U2-rIb"/>
                         <outlet property="phoneField" destination="bFd-MQ-w1F" id="3KE-7b-xRM"/>
                         <outlet property="requestField" destination="gDu-xa-ozs" id="VUN-ww-yFa"/>
+                        <outlet property="searchBar" destination="T0Y-YN-o4Y" id="6rB-Jl-pcO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
@@ -394,7 +407,7 @@
                     </connections>
                 </searchDisplayController>
             </objects>
-            <point key="canvasLocation" x="788" y="760.56971514242889"/>
+            <point key="canvasLocation" x="787.5" y="760.546875"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
